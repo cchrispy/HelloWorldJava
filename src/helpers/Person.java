@@ -13,10 +13,12 @@ public class Person {
   
   private String name;
   private int age;
+  private int weight;
   
-  public Person(String firstName, int firstAge) {
+  public Person(String firstName, int firstAge, int weight) {
     this.name = firstName;
     this.age = firstAge;
+    this.weight = weight;
   }
   
   public void printPerson() {
@@ -26,7 +28,24 @@ public class Person {
   public void getOlder() {
     this.age++;
   }
+
+  public int getAge() {
+    return age;
+  }
+
+  public void setAge(int age) {
+    this.age = age;
+  }
   
+  public int getWeight() {
+    return this.weight;
+  }
+  
+  public void setWeight(int weight) {
+    this.weight = weight;
+  }
+  
+  @Override
   public String toString() {
     return this.name + ": " + this.age;
   }
