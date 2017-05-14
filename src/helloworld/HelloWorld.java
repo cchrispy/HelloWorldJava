@@ -18,6 +18,8 @@ import helpers.LotteryNumbers;
 import helpers.OverloadedCounter;
 import helpers.Reformatory;
 
+import helpers.Student;
+
 /**
  *
  * @author ChrisMac
@@ -179,6 +181,34 @@ public class HelloWorld {
     System.out.println(reform.totalWeightMeasured());
     
   }
+  
+  public static void studentList() {
+    ArrayList<Student> list = new ArrayList<>();
+    
+    Student chris = new Student("Chris", 420);
+    Student bob = new Student("Bobert the ham slayer", 101);
+    Student bo = new Student("Bo Burnham", 99);
+    
+    list.add(chris);
+    list.add(bob);
+    list.add(bo);
+    
+    for (Student student : list) {
+      System.out.println(student);
+    }
+    
+    for (Student student : list) {
+      if (student.getName().indexOf("i") > -1) {
+        System.out.println(student);
+      }
+    }
+    
+    for (Student student : list) {
+      if (student.getName().indexOf("ham") > -1) {
+        System.out.println(student);
+      }
+    }
+  }
 
   /**
    * @param args the command line arguments
@@ -265,5 +295,6 @@ public class HelloWorld {
 
 //    overloadedCounter();
 //    reformatoryPerson();
+//    studentList();
   }
 }
