@@ -45,6 +45,10 @@ public class Person {
     this.weight = weight;
   }
   
+  public void addWeight(int weight) {
+    this.weight += weight;
+  }
+  
   @Override
   public String toString() {
     return this.name + ": " + this.age;
