@@ -16,6 +16,7 @@ import helpers.Counter;
 import helpers.ClockCounter;
 import helpers.LotteryNumbers;
 import helpers.OverloadedCounter;
+import helpers.Reformatory;
 
 /**
  *
@@ -167,6 +168,17 @@ public class HelloWorld {
       System.out.println(counter1.getValue());
     }
   }
+  
+  public static void reformatoryPerson() {
+    Person chris = new Person("chris", 25, 145);
+    Reformatory reform = new Reformatory();
+    System.out.println(reform.weight(chris));
+    System.out.println(reform.weight(chris));
+    reform.feed(chris);
+    System.out.println(reform.weight(chris));
+    System.out.println(reform.totalWeightMeasured());
+    
+  }
 
   /**
    * @param args the command line arguments
@@ -252,5 +264,6 @@ public class HelloWorld {
 //    System.out.println(results);
 
 //    overloadedCounter();
+//    reformatoryPerson();
   }
 }

@@ -21,12 +21,12 @@ public class Reformatory {
   }
   
   public int weight(Person person) {
+    this.count++;
     return person.getWeight();
   }
   
   public void feed(Person person) {
     person.addWeight(1);
-    this.count++;
   }
   
   public int totalWeightMeasured() {
