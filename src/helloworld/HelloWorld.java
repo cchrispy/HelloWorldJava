@@ -19,6 +19,7 @@ import helpers.OverloadedCounter;
 import helpers.Reformatory;
 
 import helpers.Student;
+import java.util.Arrays;
 
 /**
  *
@@ -217,6 +218,14 @@ public class HelloWorld {
     }
     System.out.println(results.substring(0, results.length() - 2));
   }
+  
+  public static int[] reverseCopy(int[] numbers) {
+    int[] clone = new int[numbers.length];
+    for (int i = 0; i < numbers.length; i++) {
+      clone[numbers.length - 1 - i] = numbers[i];
+    }
+    return clone;
+  }
 
   /**
    * @param args the command line arguments
@@ -314,5 +323,8 @@ public class HelloWorld {
 
 //      int[] numbers = { 1, 4, 3, 2 };
 //      printElegantly(numbers);
+
+//    int[] numbers = { 1, 4, 3, 2 };
+//    System.out.println(Arrays.toString(reverseCopy(numbers)));
   }
 }
