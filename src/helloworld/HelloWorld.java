@@ -209,6 +209,14 @@ public class HelloWorld {
       }
     }
   }
+  
+  public static void printElegantly(int[] numbers) {
+    String results = "";
+    for (int num : numbers) {
+      results += num + ", ";
+    }
+    System.out.println(results.substring(0, results.length() - 2));
+  }
 
   /**
    * @param args the command line arguments
@@ -296,5 +304,15 @@ public class HelloWorld {
 //    overloadedCounter();
 //    reformatoryPerson();
 //    studentList();
+
+//    int[] numbers = { 1, 4, 3, 2 };
+//    int sum = 0;
+//    for (int i = 0; i < numbers.length; i++) {
+//      sum += numbers[i];
+//    }
+//    System.out.println(sum);
+
+//      int[] numbers = { 1, 4, 3, 2 };
+//      printElegantly(numbers);
   }
 }
